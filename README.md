@@ -67,8 +67,8 @@ The difficulty of the level will get tough incrementally.
 ---
 
 ## 11. Development Timeline
-- **Week 1**: Finalize game mechanics.  
-- **Week 2**: Create and test levels.  
+- **Week 1**: This week I'll try to break down this entire project into reusable scenes and nodes. I'll focus on minimum stuff without increasing unnecessary complexity in the beginning of this project.
+- **Week 2**: ...
 
 ---
 
