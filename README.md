@@ -28,9 +28,9 @@ Casual gamers aged 10-25 who enjoy fun and easy-to-pick-up games.
 ## 5. Core Gameplay Mechanics
 - **Mechanic 1**:
   - Use the following buttons to play the game:
-    - **Arrow up:** To make the player jump and press twice for double jump.
-    - **Arrow left:** To move the player at the left direction.
-    - **Arrow right:** To move the player at the right direction
+	- **Arrow up:** To make the player jump and press twice for double jump.
+	- **Arrow left:** To move the player at the left direction.
+	- **Arrow right:** To move the player at the right direction
 - **Mechanic 2**: ...
 
 ---
