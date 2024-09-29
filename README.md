@@ -54,22 +54,19 @@ The difficulty of the level will get tough incrementally.
 ---
 
 ## 9. Assets and Resources
-*List the assets you plan to use and give credit.*  
 - **Asset Pack**: Pixel Adventure
 - **Author**: [Pixel Frog on itch.io](https://itch.io/profile/pixelfrog-assets)
 
 ---
 
 ## 10. Technologies Used
-*List the technologies and tools you will use to develop your game.*  
-- **Game Engine**: Godot  
+- **Game Engine**: [Godot](https://godotengine.org/)
 - **Programming Language**: GDScript  
 - **Sound Editing**: Audacity (for sound effects and music)
 
 ---
 
 ## 11. Development Timeline
-*Set a rough timeline for your project. When do you aim to complete each part?*  
 - **Week 1**: Finalize game mechanics.  
 - **Week 2**: Create and test levels.  
 
