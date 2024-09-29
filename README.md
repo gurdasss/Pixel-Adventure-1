@@ -36,15 +36,14 @@ Casual gamers aged 10-25 who enjoy fun and easy-to-pick-up games.
 ---
 
 ## 6. Visual Style
-*Describe the art style (e.g., pixel art, cartoonish, realistic).*  
-**Example**: “Pixel art with bright colors and a whimsical design.”  
+Pixel art with cute looking character skins and fruits. 
 
 ---
 
 ## 7. Level Design
-*Outline your approach to level design. What will the levels consist of?*  
-- **Level 1**: Basic flapping mechanic with few obstacles.  
-- **Level 2**: Introduces moving asteroids to increase difficulty.  
+The difficulty of the level will get tough incrementally.
+- **Level 1**: ...
+- **Level 2**: ...
 
 ---
 
@@ -56,8 +55,8 @@ Casual gamers aged 10-25 who enjoy fun and easy-to-pick-up games.
 
 ## 9. Assets and Resources
 *List the assets you plan to use and give credit.*  
-- **Asset Pack**: “Space Bird Pack”  
-- **Author**: “JohnDoeGames on itch.io”  
+- **Asset Pack**: Pixel Adventure
+- **Author**: [Pixel Frog on itch.io](https://itch.io/profile/pixelfrog-assets)
 
 ---
 
@@ -65,8 +64,7 @@ Casual gamers aged 10-25 who enjoy fun and easy-to-pick-up games.
 *List the technologies and tools you will use to develop your game.*  
 - **Game Engine**: Godot  
 - **Programming Language**: GDScript  
-- **Art Software**: Blender (for any custom assets)  
-- **Sound Editing**: Audacity (for sound effects and music)  
+- **Sound Editing**: Audacity (for sound effects and music)
 
 ---
 
