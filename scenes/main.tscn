@@ -4,8 +4,5 @@
 
 [node name="Main" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
-
 [node name="Level 1" parent="." instance=ExtResource("1_f1rnq")]
-position = Vector2(-262, -210)
+position = Vector2(-265, -129)
