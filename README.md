@@ -67,7 +67,8 @@ The difficulty of the level will get tough incrementally.
 ---
 
 ## 11. Development Timeline
-- **Week 1**: This week I'll try to break down this entire project into reusable scenes and nodes. I'll focus on minimum stuff without increasing unnecessary complexity in the beginning of this project.
+- **Week 1 [Sep 29, 2024 – Oct 05, 2024]**:
+This week I'll try to break down this entire project into reusable scenes and nodes. I'll focus on minimum stuff without increasing unnecessary complexity in the beginning of this project.
 - **Week 2**: ...
 
 ---
