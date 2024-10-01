@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://cn7ci8kgchsqx"]
+[gd_scene load_steps=4 format=3 uid="uid://cn7ci8kgchsqx"]
 
 [ext_resource type="PackedScene" uid="uid://vngudytnu2ti" path="res://scenes/player.tscn" id="1_d2n1m"]
+[ext_resource type="PackedScene" uid="uid://cu480kaa3lcbm" path="res://scenes/Fruits/apple.tscn" id="2_fsfok"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lso6x"]
 
@@ -16,3 +17,6 @@ zoom = Vector2(2, 2)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(0, 41)
 shape = SubResource("WorldBoundaryShape2D_lso6x")
+
+[node name="Apple" parent="." instance=ExtResource("2_fsfok")]
+position = Vector2(44, -29)
