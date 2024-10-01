@@ -70,6 +70,7 @@ The difficulty of the level will get tough incrementally.
 - **Week 1 [Sep 29, 2024 – Oct 05, 2024]**:
 	- This week I'll try to break down this entire project into reusable scenes and nodes. I'll focus on minimum stuff without increasing unnecessary complexity in the beginning of this project.
 	- **[Sep 30, 2024]:** I have created a skin manager node which will manage all the player's skin and animations and a basic player node.
+	- **[Oct 01, 2024]:** I had worked on fruit collectables and added a functionality that will generate random skin for the player every time the user restarts the game.
 - **Week 2**: ...
 
 ---

@@ -134,6 +134,6 @@ animations = [{
 
 [node name="FruitArea" parent="." instance=ExtResource("2_pnglt")]
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="FruitArea"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="FruitArea"]
 sprite_frames = SubResource("SpriteFrames_wg7o2")
 autoplay = "default"
