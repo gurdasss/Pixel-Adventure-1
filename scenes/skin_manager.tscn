@@ -86,7 +86,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_3umyk")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
 "speed": 20.0
 }]
 
@@ -171,7 +171,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_662gp")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
 "speed": 20.0
 }]
 
@@ -256,7 +256,7 @@ animations = [{
 "texture": SubResource("AtlasTexture_yxxnv")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
 "speed": 20.0
 }]
 
@@ -341,30 +341,32 @@ animations = [{
 "texture": SubResource("AtlasTexture_2gnqe")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
 "speed": 20.0
 }]
 
 [node name="SkinManager" type="Node2D"]
 
 [node name="Mask Dude" type="AnimatedSprite2D" parent="."]
+visible = false
 sprite_frames = SubResource("SpriteFrames_l4nhe")
-autoplay = "default"
-frame = 7
-frame_progress = 0.982524
+animation = &"idle"
+autoplay = "idle"
 
 [node name="Ninja Frog" type="AnimatedSprite2D" parent="."]
 visible = false
 sprite_frames = SubResource("SpriteFrames_fwx0k")
+animation = &"idle"
+autoplay = "idle"
 
 [node name="Pink Man" type="AnimatedSprite2D" parent="."]
 visible = false
 sprite_frames = SubResource("SpriteFrames_fwx55")
-frame = 3
-frame_progress = 0.806385
+animation = &"idle"
+autoplay = "idle"
 
 [node name="Virtual Guy" type="AnimatedSprite2D" parent="."]
 visible = false
 sprite_frames = SubResource("SpriteFrames_cluc1")
-frame = 7
-frame_progress = 0.0317459
+animation = &"idle"
+autoplay = "idle"
