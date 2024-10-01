@@ -132,9 +132,10 @@ animations = [{
 
 [node name="Apple" type="Node2D"]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_5k7pu")
-autoplay = "default"
-
 [node name="FruitArea" parent="." instance=ExtResource("2_atp35")]
 scale = Vector2(0.88, 0.88)
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="FruitArea"]
+scale = Vector2(1.13636, 1.13636)
+sprite_frames = SubResource("SpriteFrames_5k7pu")
+autoplay = "default"

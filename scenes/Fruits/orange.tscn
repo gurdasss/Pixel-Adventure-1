@@ -132,8 +132,8 @@ animations = [{
 
 [node name="Orange" type="Node2D"]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="FruitArea" parent="." instance=ExtResource("1_cckrc")]
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="FruitArea"]
 sprite_frames = SubResource("SpriteFrames_dn22b")
 autoplay = "default"
-
-[node name="FruitArea" parent="." instance=ExtResource("1_cckrc")]

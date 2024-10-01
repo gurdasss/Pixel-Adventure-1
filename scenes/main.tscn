@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cn7ci8kgchsqx"]
+[gd_scene load_steps=5 format=3 uid="uid://cn7ci8kgchsqx"]
 
 [ext_resource type="PackedScene" uid="uid://vngudytnu2ti" path="res://scenes/player.tscn" id="1_d2n1m"]
 [ext_resource type="PackedScene" uid="uid://cu480kaa3lcbm" path="res://scenes/Fruits/apple.tscn" id="2_fsfok"]
+[ext_resource type="PackedScene" uid="uid://3tp4djm01jsw" path="res://scenes/Fruits/banana.tscn" id="3_ux7a8"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lso6x"]
 
@@ -19,4 +20,7 @@ position = Vector2(0, 41)
 shape = SubResource("WorldBoundaryShape2D_lso6x")
 
 [node name="Apple" parent="." instance=ExtResource("2_fsfok")]
-position = Vector2(44, -29)
+position = Vector2(60, -16)
+
+[node name="Banana" parent="." instance=ExtResource("3_ux7a8")]
+position = Vector2(-74, -32)
