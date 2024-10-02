@@ -1,0 +1,67 @@
+[gd_scene load_steps=9 format=3 uid="uid://dl25bfcgg0oe7"]
+
+[ext_resource type="PackedScene" uid="uid://b83k8v4x738i5" path="res://scenes/box_area.tscn" id="1_tjwo5"]
+[ext_resource type="Texture2D" uid="uid://drxsfd3234r7u" path="res://assets/Items/Boxes/Box3/Hit (28x24).png" id="2_61xre"]
+[ext_resource type="Texture2D" uid="uid://5vlt111pm8ip" path="res://assets/Items/Boxes/Box3/Idle.png" id="2_88fjw"]
+[ext_resource type="Texture2D" uid="uid://cmfhorbub5j2d" path="res://assets/Items/Boxes/Box3/Break.png" id="5_wogp1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_osjxx"]
+atlas = ExtResource("2_61xre")
+region = Rect2(0, 0, 28, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_02a84"]
+atlas = ExtResource("2_61xre")
+region = Rect2(28, 0, 28, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3jxk6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_osjxx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_02a84")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_88fjw")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 0.0
+}]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_rc080"]
+particles_animation = true
+particles_anim_h_frames = 4
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[node name="Box 3" type="Node2D"]
+
+[node name="BoxArea" parent="." instance=ExtResource("1_tjwo5")]
+numberOfHits = 6
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="BoxArea"]
+sprite_frames = SubResource("SpriteFrames_3jxk6")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="BoxArea"]
+material = SubResource("CanvasItemMaterial_rc080")
+emitting = false
+amount = 4
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+texture = ExtResource("5_wogp1")
+spread = 180.0
+gravity = Vector2(0, 300)
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+angle_max = 200.0
+anim_offset_max = 1.0
