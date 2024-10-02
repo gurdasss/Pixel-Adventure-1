@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://scripts/box_area.gd" id="1_am6bg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mww8t"]
+size = Vector2(16, 20)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0l07u"]
 

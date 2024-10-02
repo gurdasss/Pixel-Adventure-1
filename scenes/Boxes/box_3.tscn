@@ -51,7 +51,7 @@ sprite_frames = SubResource("SpriteFrames_3jxk6")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="CPUParticles2D" type="CPUParticles2D" parent="BoxArea"]
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="BoxArea"]
 material = SubResource("CanvasItemMaterial_mmwry")
 emitting = false
 amount = 4
@@ -61,7 +61,7 @@ explosiveness = 1.0
 texture = ExtResource("5_wogp1")
 spread = 180.0
 gravity = Vector2(0, 300)
-initial_velocity_min = 20.0
-initial_velocity_max = 50.0
+initial_velocity_min = 50.0
+initial_velocity_max = 90.0
 angle_max = 360.0
 anim_offset_max = 1.0
