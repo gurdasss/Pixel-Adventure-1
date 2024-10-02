@@ -49,7 +49,7 @@ animations = [{
 "speed": 0.0
 }]
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bs26w"]
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_fissc"]
 particles_animation = true
 particles_anim_h_frames = 4
 particles_anim_v_frames = 1
@@ -66,7 +66,7 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="BoxArea"]
-material = SubResource("CanvasItemMaterial_bs26w")
+material = SubResource("CanvasItemMaterial_fissc")
 emitting = false
 amount = 4
 lifetime = 0.5
@@ -75,7 +75,7 @@ explosiveness = 1.0
 texture = ExtResource("5_cipw3")
 spread = 180.0
 gravity = Vector2(0, 300)
-initial_velocity_min = 50.0
-initial_velocity_max = 100.0
-angle_max = 200.0
+initial_velocity_min = 30.0
+initial_velocity_max = 70.0
+angle_max = 360.0
 anim_offset_max = 1.0
