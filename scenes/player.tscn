@@ -8,6 +8,7 @@ radius = 10.0499
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
+collision_layer = 2
 script = ExtResource("1_4iii2")
 
 [node name="SkinManager" parent="." instance=ExtResource("1_n5j03")]

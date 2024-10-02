@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnqog856hd4s8"]
+
+[ext_resource type="Texture2D" uid="uid://cju13qa4avqtb" path="res://assets/Items/Boxes/Box1/Break.png" id="1_v2mcj"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_7dskx"]
+particles_animation = true
+particles_anim_h_frames = 4
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[node name="Test Particle" type="CPUParticles2D"]
+material = SubResource("CanvasItemMaterial_7dskx")
+emitting = false
+amount = 4
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+texture = ExtResource("1_v2mcj")
+spread = 180.0
+gravity = Vector2(0, 350)
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+angle_max = 360.0
+anim_offset_max = 1.0

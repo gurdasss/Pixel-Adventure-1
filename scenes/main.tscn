@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://cn7ci8kgchsqx"]
+[gd_scene load_steps=9 format=3 uid="uid://cn7ci8kgchsqx"]
 
 [ext_resource type="PackedScene" uid="uid://vngudytnu2ti" path="res://scenes/player.tscn" id="1_d2n1m"]
 [ext_resource type="PackedScene" uid="uid://cu480kaa3lcbm" path="res://scenes/Fruits/apple.tscn" id="2_fsfok"]
+[ext_resource type="PackedScene" uid="uid://b83k8v4x738i5" path="res://scenes/box_area.tscn" id="2_j62qi"]
 [ext_resource type="PackedScene" uid="uid://3tp4djm01jsw" path="res://scenes/Fruits/banana.tscn" id="3_ux7a8"]
 [ext_resource type="PackedScene" uid="uid://d4d5vjaekdyy7" path="res://scenes/Fruits/kiwi.tscn" id="4_31sum"]
+[ext_resource type="Texture2D" uid="uid://db62a6p4q2yhp" path="res://assets/Items/Boxes/Box2/Idle.png" id="4_l481c"]
 [ext_resource type="PackedScene" uid="uid://lirjtk2rkv7b" path="res://scenes/Fruits/melon.tscn" id="5_8pqte"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lso6x"]
@@ -11,6 +13,7 @@
 [node name="Main" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_d2n1m")]
+position = Vector2(44, -20)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
@@ -32,3 +35,8 @@ position = Vector2(-70, 5)
 
 [node name="Melon" parent="." instance=ExtResource("5_8pqte")]
 position = Vector2(44, 3)
+
+[node name="BoxArea" parent="." instance=ExtResource("2_j62qi")]
+
+[node name="Sprite2D" type="Sprite2D" parent="BoxArea"]
+texture = ExtResource("4_l481c")
