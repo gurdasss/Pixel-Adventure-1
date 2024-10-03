@@ -1,9 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://dy5ytsf6vynu2"]
+[gd_scene load_steps=8 format=3 uid="uid://dy5ytsf6vynu2"]
 
 [ext_resource type="PackedScene" uid="uid://b83k8v4x738i5" path="res://scenes/box_area.tscn" id="1_l56qt"]
 [ext_resource type="Texture2D" uid="uid://do56nj01hp4r2" path="res://assets/Items/Boxes/Box1/Hit (28x24).png" id="2_rntqb"]
 [ext_resource type="Texture2D" uid="uid://bslxaspw1jvdp" path="res://assets/Items/Boxes/Box1/Idle.png" id="3_p548t"]
-[ext_resource type="Texture2D" uid="uid://cju13qa4avqtb" path="res://assets/Items/Boxes/Box1/Break.png" id="4_cttse"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3cegn"]
 atlas = ExtResource("2_rntqb")
@@ -42,32 +41,12 @@ animations = [{
 "speed": 0.0
 }]
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_0v6jl"]
-particles_animation = true
-particles_anim_h_frames = 4
-particles_anim_v_frames = 1
-particles_anim_loop = false
-
 [node name="Box 1" type="Node2D"]
 
 [node name="BoxArea" parent="." instance=ExtResource("1_l56qt")]
+texturePath = "res://assets/Items/Boxes/Box1/Break.png"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="BoxArea"]
 sprite_frames = SubResource("SpriteFrames_3fcxm")
 animation = &"idle"
 autoplay = "idle"
-
-[node name="CPUParticles2D2" type="CPUParticles2D" parent="BoxArea"]
-material = SubResource("CanvasItemMaterial_0v6jl")
-emitting = false
-amount = 4
-lifetime = 0.5
-one_shot = true
-explosiveness = 1.0
-texture = ExtResource("4_cttse")
-spread = 180.0
-gravity = Vector2(0, 300)
-initial_velocity_min = 100.0
-initial_velocity_max = 150.0
-angle_max = 360.0
-anim_offset_max = 1.0
