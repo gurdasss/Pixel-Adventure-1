@@ -44,11 +44,13 @@ func _on_body_entered(body: Node2D) -> void:
 	if is_instance_valid(animatedSprite) and not numberOfHits:
 		animatedSprite.queue_free()
 		cpu_particles.emitting = true # start emitting particles
-		# connect with CPUParticles2D's finished signal
-		# and then call queue_free from self.
-		cpu_particles.connect("finished", Callable(self, "queue_free"))
 
 func _on_body_exited(body: Node2D) -> void:
 	if is_instance_valid(animatedSprite):
 		# retuen the box back to normal
 		animatedSprite.play("idle")
+
+# connect with CPUParticles2D's finished signal
+# and then call queue_free from self.
+func _on_cpu_particles_2d_finished() -> void:
+	queue_free()
