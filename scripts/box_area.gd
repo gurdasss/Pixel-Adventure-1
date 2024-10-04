@@ -10,10 +10,23 @@ var animatedSprite: AnimatedSprite2D = null
 # number of hits different types of box can take
 @export var numberOfHits: int = 1
 
+var fruitBasket: Array[PackedScene]
+
 func _ready() -> void:
 	# get the last node from each instance of this node.
 	# AnimatedSprite2D (last child)
 	animatedSprite = get_child(-1)
+	
+	fruitBasket.append(preload("res://scenes/Fruits/apple.tscn"))
+	fruitBasket.append(preload("res://scenes/Fruits/banana.tscn"))
+	fruitBasket.append(preload("res://scenes/Fruits/cherry.tscn"))
+	
+	fruitBasket.append(preload("res://scenes/Fruits/kiwi.tscn"))
+	fruitBasket.append(preload("res://scenes/Fruits/melon.tscn"))
+	fruitBasket.append(preload("res://scenes/Fruits/orange.tscn"))
+	
+	fruitBasket.append(preload("res://scenes/Fruits/pineapple.tscn"))
+	fruitBasket.append(preload("res://scenes/Fruits/strawberry.tscn"))
 	
 	# load the specified texturePath during runtime
 	cpu_particles.texture = load(texturePath)
