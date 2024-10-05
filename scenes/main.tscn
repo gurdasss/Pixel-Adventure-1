@@ -1,31 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cn7ci8kgchsqx"]
+[gd_scene load_steps=2 format=3 uid="uid://cn7ci8kgchsqx"]
 
-[ext_resource type="PackedScene" uid="uid://vngudytnu2ti" path="res://scenes/player.tscn" id="1_d2n1m"]
-[ext_resource type="PackedScene" uid="uid://cu480kaa3lcbm" path="res://scenes/Fruits/apple.tscn" id="2_i1c56"]
-[ext_resource type="PackedScene" uid="uid://3tp4djm01jsw" path="res://scenes/Fruits/banana.tscn" id="3_ndih5"]
-[ext_resource type="PackedScene" uid="uid://ck1g6ku57eesu" path="res://scenes/Fruits/cherry.tscn" id="4_sgyfn"]
-
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_lso6x"]
+[ext_resource type="PackedScene" uid="uid://dgxefeopxlq2r" path="res://scenes/Levels/level_1.tscn" id="1_vxwi6"]
 
 [node name="Main" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_d2n1m")]
-position = Vector2(-43, -20)
-
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(0, 41)
-shape = SubResource("WorldBoundaryShape2D_lso6x")
-
-[node name="Apple" parent="." instance=ExtResource("2_i1c56")]
-position = Vector2(71, -36)
-
-[node name="Banana" parent="." instance=ExtResource("3_ndih5")]
-position = Vector2(47, -15)
-
-[node name="Cherry" parent="." instance=ExtResource("4_sgyfn")]
-position = Vector2(82, -19)
+[node name="Level1" parent="." instance=ExtResource("1_vxwi6")]
