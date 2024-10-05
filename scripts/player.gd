@@ -12,7 +12,7 @@ func _ready() -> void:
 	var skin_manager: Node2D = preload("res://scenes/skin_manager.tscn").instantiate()
 	
 	# generate a random child ID
-	var childID: int = randi_range(0, skin_manager.get_child_count())
+	var childID: int = randi_range(0, skin_manager.get_child_count() - 1)
 	
 	# pick a random skin using child ID
 	currentSkin = skin_manager.get_child(childID).duplicate()
