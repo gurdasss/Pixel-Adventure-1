@@ -348,25 +348,21 @@ animations = [{
 [node name="SkinManager" type="Node2D"]
 
 [node name="Mask Dude" type="AnimatedSprite2D" parent="."]
-visible = false
 sprite_frames = SubResource("SpriteFrames_l4nhe")
 animation = &"idle"
 autoplay = "idle"
 
 [node name="Ninja Frog" type="AnimatedSprite2D" parent="."]
-visible = false
 sprite_frames = SubResource("SpriteFrames_fwx0k")
 animation = &"idle"
 autoplay = "idle"
 
 [node name="Pink Man" type="AnimatedSprite2D" parent="."]
-visible = false
 sprite_frames = SubResource("SpriteFrames_fwx55")
 animation = &"idle"
 autoplay = "idle"
 
 [node name="Virtual Guy" type="AnimatedSprite2D" parent="."]
-visible = false
 sprite_frames = SubResource("SpriteFrames_cluc1")
 animation = &"idle"
 autoplay = "idle"

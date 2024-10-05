@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://vngudytnu2ti"]
+[gd_scene load_steps=3 format=3 uid="uid://vngudytnu2ti"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_4iii2"]
-[ext_resource type="PackedScene" uid="uid://dd2v8rwy4uxgn" path="res://scenes/skin_manager.tscn" id="1_n5j03"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w840n"]
 radius = 10.0499
@@ -10,8 +9,6 @@ radius = 10.0499
 z_index = 5
 collision_layer = 2
 script = ExtResource("1_4iii2")
-
-[node name="SkinManager" parent="." instance=ExtResource("1_n5j03")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_w840n")

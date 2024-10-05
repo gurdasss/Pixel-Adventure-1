@@ -4,19 +4,20 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
-@onready var skin_manager: Node2D = $SkinManager
 var currentSkin: AnimatedSprite2D
 
-
-# the below _ready function will get called once
-# every child of this node's ready gets executed.
 func _ready() -> void:
-	# store all the childrens of skin_manager in animation list
-	# and then pick a random skin from that array
-	# every time player node enters the scene tree.
-	var animationList: Array[Node] = skin_manager.get_children()
-	currentSkin = animationList.pick_random()
-	currentSkin.visible = true
+	# instantiate the skin Manager that contains
+	# all the skins for the player
+	var skin_manager: Node2D = preload("res://scenes/skin_manager.tscn").instantiate()
+	
+	# generate a random child ID
+	var childID: int = randi_range(0, skin_manager.get_child_count())
+	
+	# pick a random skin using child ID
+	currentSkin = skin_manager.get_child(childID).duplicate()
+	add_child(currentSkin)
+	
 
 
 func _physics_process(delta: float) -> void:
