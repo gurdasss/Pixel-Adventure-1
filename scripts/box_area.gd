@@ -47,7 +47,7 @@ func _on_body_entered(body: Node2D) -> void:
 
 func _on_body_exited(body: Node2D) -> void:
 	if is_instance_valid(animatedSprite):
-		# retuen the box back to normal
+		# return the box back to normal
 		animatedSprite.play("idle")
 
 # connect with CPUParticles2D's finished signal

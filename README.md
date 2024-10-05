@@ -72,6 +72,7 @@ The difficulty of the level will get tough incrementally.
 	- **[Sep 30, 2024]:** I have created a skin manager node which will manage all the player's skin and animations and a basic player node.
 	- **[Oct 01, 2024]:** I had worked on fruit collectables and added a functionality that will generate random skin for the player every time the user restarts the game.
 	- **[Oct 02, 2024]:** I worked on a simple 2D particle system for boxes and some collision related stuff.
+	- **[Oct 03, 2024] - [Oct 05, 2024]:** I had spent a lot of time trying to drop several random fruits once the box gets destroyed unfortunately, I had no luck. So, I had decided to make that in future.
 - **Week 2**: ...
 
 ---

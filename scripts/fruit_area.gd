@@ -15,4 +15,5 @@ func _on_body_entered(body: Node2D) -> void:
 
 # delete the instance once the collect animation is over.
 func _on_collect_animation_animation_finished() -> void:
+	get_parent().queue_free() # free the parent node first
 	queue_free()
