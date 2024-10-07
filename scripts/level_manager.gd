@@ -5,7 +5,8 @@ extends Node2D
 
 @export var playerStartingPosition: Vector2 = Vector2(0,0)
 
-const BG_TEXTURE = [
+
+const BG_TEXTURE: Array[String] = [
 	"res://assets/Background/Blue.png",
 	"res://assets/Background/Brown.png",
 	"res://assets/Background/Gray.png",

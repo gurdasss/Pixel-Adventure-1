@@ -1,16 +1,13 @@
-[gd_scene load_steps=14 format=4 uid="uid://dgxefeopxlq2r"]
+[gd_scene load_steps=6 format=4 uid="uid://makoxnapn2wv"]
 
-[ext_resource type="PackedScene" uid="uid://dv17yww4kifoh" path="res://scenes/level_manager.tscn" id="1_a8tkq"]
-[ext_resource type="Texture2D" uid="uid://dn7o56386psqj" path="res://assets/Terrain/Terrain (16x16).png" id="1_urp0a"]
-[ext_resource type="PackedScene" uid="uid://cu480kaa3lcbm" path="res://scenes/Fruits/apple.tscn" id="3_00k5o"]
-[ext_resource type="PackedScene" uid="uid://3tp4djm01jsw" path="res://scenes/Fruits/banana.tscn" id="4_n1l7y"]
-[ext_resource type="PackedScene" uid="uid://ck1g6ku57eesu" path="res://scenes/Fruits/cherry.tscn" id="5_d4y73"]
+[ext_resource type="PackedScene" uid="uid://dv17yww4kifoh" path="res://scenes/level_manager.tscn" id="1_crh42"]
+[ext_resource type="Texture2D" uid="uid://dn7o56386psqj" path="res://assets/Terrain/Terrain (16x16).png" id="2_lp1cf"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_uui2t"]
 tile_data = PackedInt32Array(0, 262144, 0, 1, 327680, 0, 2, 0, 0, 3, 65536, 0)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_os4x1"]
-texture = ExtResource("1_urp0a")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pov6j"]
+texture = ExtResource("2_lp1cf")
 texture_region_size = Vector2i(8, 8)
 0:1/0 = 0
 0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
@@ -173,181 +170,17 @@ texture_region_size = Vector2i(8, 8)
 5:0/0 = 0
 5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, 4, -4, 4, 4, -4, 4)
 
-[sub_resource type="TileSet" id="TileSet_p3mdu"]
+[sub_resource type="TileSet" id="TileSet_dg2hr"]
 tile_size = Vector2i(8, 8)
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_os4x1")
+sources/0 = SubResource("TileSetAtlasSource_pov6j")
 pattern_0 = SubResource("TileMapPattern_uui2t")
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_kjfyj"]
-tile_data = PackedInt32Array(0, 393216, 1, 1, 524288, 1)
-
-[sub_resource type="TileMapPattern" id="TileMapPattern_afstf"]
-tile_data = PackedInt32Array(0, 393216, 0, 1, 524288, 0)
-
-[sub_resource type="TileMapPattern" id="TileMapPattern_dd4jq"]
-tile_data = PackedInt32Array(0, 393216, 1, 1, 458752, 1, 2, 458752, 1, 3, 524288, 1)
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dveqa"]
-texture = ExtResource("1_urp0a")
-6:0/0 = 0
-6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-7:0/0 = 0
-7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-8:0/0 = 0
-8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-6:1/0 = 0
-6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-7:1/0 = 0
-7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-8:1/0 = 0
-8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-6:2/0 = 0
-6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-7:2/0 = 0
-7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-8:2/0 = 0
-8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-6:4/0 = 0
-6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-7:4/0 = 0
-7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-8:4/0 = 0
-8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-6:5/0 = 0
-6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-7:5/0 = 0
-7:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-8:5/0 = 0
-8:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-6:6/0 = 0
-6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-7:6/0 = 0
-7:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-8:6/0 = 0
-8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-6:8/0 = 0
-6:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-7:8/0 = 0
-7:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-8:8/0 = 0
-8:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-6:9/0 = 0
-6:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-7:9/0 = 0
-7:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-8:9/0 = 0
-8:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-6:10/0 = 0
-6:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-7:10/0 = 0
-7:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-8:10/0 = 0
-8:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-9:1/size_in_atlas = Vector2i(2, 1)
-9:1/0 = 0
-9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.9099, -7.95495, 16.4402, -8.13173, 16.4402, 7.77818, -15.7331, 7.95495)
-9:5/size_in_atlas = Vector2i(2, 1)
-9:5/0 = 0
-9:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.9099, -7.95495, 16.4402, -8.13173, 16.4402, 7.77818, -15.7331, 7.95495)
-9:9/size_in_atlas = Vector2i(2, 1)
-9:9/0 = 0
-9:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.9099, -7.95495, 16.4402, -8.13173, 16.4402, 7.77818, -15.7331, 7.95495)
-9:4/0 = 0
-10:4/0 = 0
-9:0/0 = 0
-10:0/0 = 0
-9:8/0 = 0
-10:8/0 = 0
-
-[sub_resource type="TileSet" id="TileSet_3kqmg"]
-physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_dveqa")
-pattern_0 = SubResource("TileMapPattern_kjfyj")
-pattern_1 = SubResource("TileMapPattern_afstf")
-pattern_2 = SubResource("TileMapPattern_dd4jq")
-
-[node name="Level1" type="Node2D"]
-
-[node name="LevelManager" parent="." instance=ExtResource("1_a8tkq")]
-playerStartingPosition = Vector2(-155, 50)
-
-[node name="Checkpoint" parent="LevelManager" index="2"]
-position = Vector2(120, 32)
+[node name="Level2" type="Node2D"]
 
 [node name="Border" type="TileMapLayer" parent="."]
 position = Vector2(4.947, 4.842)
 tile_map_data = PackedByteArray("AADi/+//AAAAAAgAAADj/+//AAABAAgAAADk/+//AAACAAgAAADl/+//AAADAAgAAADm/+//AAAEAAgAAADn/+//AAABAAgAAADp/+//AAADAAgAAADq/+//AAAEAAgAAADr/+//AAABAAgAAADs/+//AAACAAgAAADt/+//AAADAAgAAADu/+//AAAEAAgAAADv/+//AAABAAgAAADw/+//AAACAAgAAADx/+//AAADAAgAAADy/+//AAAEAAgAAADz/+//AAABAAgAAAD0/+//AAACAAgAAAD1/+//AAADAAgAAAD2/+//AAAEAAgAAAD3/+//AAABAAgAAAD4/+//AAACAAgAAAD5/+//AAADAAgAAAD6/+//AAAEAAgAAAD7/+//AAABAAgAAAD8/+//AAACAAgAAAD9/+//AAADAAgAAAD+/+//AAAEAAgAAAD//+//AAABAAgAAAAAAO//AAACAAgAAAABAO//AAADAAgAAAACAO//AAAEAAgAAAADAO//AAABAAgAAAAEAO//AAACAAgAAAAFAO//AAADAAgAAAAGAO//AAAEAAgAAAAHAO//AAABAAgAAAAIAO//AAACAAgAAAAJAO//AAADAAgAAAAKAO//AAAEAAgAAAALAO//AAABAAgAAAAMAO//AAACAAgAAAANAO//AAADAAgAAAAOAO//AAAEAAgAAAAPAO//AAABAAgAAAAQAO//AAACAAgAAAARAO//AAADAAgAAAASAO//AAAEAAgAAAATAO//AAABAAgAAAAUAO//AAACAAgAAAAVAO//AAADAAgAAAAWAO//AAAEAAgAAAAXAO//AAABAAgAAAAYAO//AAACAAgAAAAZAO//AAACAAgAAAAaAO//AAACAAgAAAAbAO//AAAFAAgAAADo/+//AAACAAgAAADi//D/AAAAABEAAADi//H/AAAAABIAAADi//L/AAAAABMAAADi//P/AAAAABQAAADi//T/AAAAABEAAADi//X/AAAAABIAAADi//b/AAAAABMAAADi//f/AAAAABQAAADi//j/AAAAABEAAADi//n/AAAAABIAAADi//r/AAAAABMAAADi//v/AAAAABQAAADi//z/AAAAABEAAADi//3/AAAAABIAAADi//7/AAAAABMAAADi////AAAAABQAAADj//z/AAAAABIAAADj//3/AAAAABEAAADj//7/AAAAABIAAADj////AAAAABMAAADj//j/AAAAABEAAADj//n/AAAAABIAAADj//r/AAAAABMAAADj//v/AAAAABEAAADi/wAAAAAAABEAAADi/wEAAAAAABIAAADi/wIAAAAAABMAAADi/wMAAAAAABQAAADi/wQAAAAAABEAAADi/wUAAAAAABIAAADi/wYAAAAAABMAAADi/wcAAAAAABQAAADi/wgAAAAAABEAAADi/wkAAAAAABIAAADi/woAAAAAABMAAADi/wsAAAAAABQAAADi/wwAAAAAABEAAADi/w0AAAAAABIAAADi/w4AAAAAABMAAADj/wwAAAAAABEAAADj/w0AAAAAABIAAADj/w4AAAAAABMAAADj/wgAAAAAABMAAADj/wkAAAAAABEAAADj/woAAAAAABIAAADj/wsAAAAAABMAAADj/wAAAAAAABEAAADj/wEAAAAAABIAAADj/wIAAAAAABMAAADj/wQAAAAAABIAAADj/wUAAAAAABMAAADj/wYAAAAAABEAAADj/wcAAAAAABIAAADj/wMAAAAAABEAAADj//b/AAAAABIAAADj//f/AAAAABMAAADj//D/AAAHABEAAADj//H/AAAHABIAAADk//D/AAAIABEAAADk//H/AAAIABIAAADl//D/AAABABAAAADm//D/AAACABAAAADn//D/AAADABAAAADo//D/AAAEABAAAADp//D/AAABABAAAADq//D/AAACABAAAADr//D/AAADABAAAADs//D/AAAAABMAAFDj//L/AAAAABEAAADl//H/AAACABAAAFAbAPD/AAAFAAEAAAAbAPH/AAAFAAIAAAAbAPL/AAAFAAMAAAAbAPP/AAAFAAQAAAAbAPT/AAAFAAEAAAAbAPX/AAAFAAIAAAAbAPb/AAAFAAMAAAAbAPf/AAAFAAQAAAAbAPj/AAAFAAEAAAAbAPn/AAAFAAIAAAAbAPr/AAAFAAMAAAAbAPv/AAAFAAQAAAAaAPT/AAADAAgAAFAaAPX/AAADAAgAAFAaAPb/AAAFAAQAAAAaAPf/AAAFAAEAAAAaAPj/AAAFAAIAAAAaAPn/AAAFAAMAAAAaAPr/AAAFAAQAAAAbAPz/AAAFAAkAAAAbAP3/AAAFAAoAAAAbAP7/AAAFAAsAAAAbAP//AAAFAAwAAAAbAAAAAAAFAAkAAAAbAAEAAAAFAAoAAAAbAAIAAAAFAAsAAAAbAAMAAAAFAAwAAAAbAAQAAAAFAAkAAAAbAAUAAAAFAAoAAAAbAAYAAAAFAAsAAAAbAAcAAAAFAAwAAAAbAAgAAAAFAAkAAAAbAAkAAAAFAAoAAAAbAAoAAAAFAAsAAAAbAAsAAAAFAAwAAAAbAAwAAAAFAAkAAAAbAA0AAAAFAAoAAAAbAA4AAAAFAAsAAADj/w8AAAAAABQAAADi/w8AAAAAABQAAADj//P/AAAAABIAAADj//T/AAAAABMAAADj//X/AAAAABEAAADu//D/AAAAABEAAFDt//D/AAAAABIAAFDx//D/AAAAABEAAFDw//D/AAAAABIAAFDv//D/AAAAABMAAFD0//D/AAAAABEAAFDz//D/AAAAABIAAFDy//D/AAAAABMAAFD3//D/AAAAABEAAFD2//D/AAAAABIAAFD1//D/AAAAABMAAFDo//H/AAAAABEAAFDn//H/AAAAABIAAFDm//H/AAAAABMAAFDr//H/AAAAABEAAFDq//H/AAAAABIAAFDp//H/AAAAABMAAFDu//H/AAAAABEAAFDt//H/AAAAABIAAFDs//H/AAAAABMAAFDk//L/AAAAABEAAADk//P/AAAAABIAAADk//T/AAAAABMAAADk//X/AAAAABEAAADk//b/AAAAABIAAADk//f/AAAAABMAAADl//L/AAAAABIAAADl//P/AAAAABIAAADm//L/AAAAABIAAAAZAPD/AAAHAAkAAAAZAPH/AAAHAAoAAAAaAPD/AAAIAAkAAAAaAPH/AAAIAAoAAAAWAPD/AAABAAgAAAAXAPD/AAACAAgAAAAYAPD/AAADAAgAAAAaAPP/AAACAAgAAFAaAPL/AAABAAgAAFAVAPD/AAABAAgAADAUAPD/AAACAAgAADATAPD/AAADAAgAADASAPD/AAABAAgAADARAPD/AAACAAgAADAQAPD/AAADAAgAADAPAPD/AAABAAgAADAOAPD/AAACAAgAADANAPD/AAADAAgAADAVAPH/AAADAAgAADAUAPH/AAACAAgAADATAPH/AAADAAgAADAXAPH/AAACAAgAADAWAPH/AAADAAgAADAYAPH/AAABAAgAADAZAPL/AAADAAgAAGAZAPP/AAACAAgAAGAZAPT/AAADAAgAAGAZAPX/AAACAAgAAGAZAPb/AAABAAgAAGAZAPf/AAADAAgAAGAZAPj/AAACAAgAAGAZAPn/AAABAAgAAGAYAPL/AAABAAgAAFA=")
-tile_set = SubResource("TileSet_p3mdu")
+tile_set = SubResource("TileSet_dg2hr")
 
-[node name="Hills" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAD1/wgAAAAGAAIAAAD2/wgAAAAHAAIAAAD3/wgAAAAIAAIAAAD1/wcAAAAGAAEAAAD2/wcAAAAHAAEAAAD3/wcAAAAIAAEAAAD1/wYAAAAHAAEAAAD2/wYAAAAJAAEAAAD3/wYAAAAIAAEAAAD1/wUAAAAHAAEAAAD2/wUAAAAHAAEAAAD3/wUAAAAIAAEAAAD1/wQAAAAHAAAAAAD2/wQAAAAHAAAAAAD3/wQAAAAIAAAAAAD4/wUAAAAGAAEAAAD5/wUAAAAIAAEAAAD4/wYAAAAGAAEAAAD5/wYAAAAIAAEAAAD4/wcAAAAGAAEAAAD5/wcAAAAIAAEAAAD4/wgAAAAGAAEAAAD5/wgAAAAIAAEAAAD4/wQAAAAGAAEAAAD5/wQAAAAIAAEAAAD4/wMAAAAGAAEAAAD5/wMAAAAIAAEAAAD4/wIAAAAGAAAAAAD5/wIAAAAIAAAAAAAEAAgAAAAIAAEAAAAEAAcAAAAIAAEAAAAEAAYAAAAIAAEAAAD6/wcAAAAHAAAAAAD7/wcAAAAHAAAAAAD8/wcAAAAHAAAAAAD9/wcAAAAHAAAAAAD+/wcAAAAHAAAAAAD//wcAAAAHAAAAAAD6/wgAAAAHAAEAAAD7/wgAAAAHAAEAAAD8/wgAAAAHAAEAAAD9/wgAAAAHAAEAAAD+/wgAAAAHAAEAAAD//wgAAAAHAAEAAADy/wcAAAAGAAAAAADz/wcAAAAHAAAAAAD0/wcAAAAIAAAAAADy/wgAAAAGAAEAAADz/wgAAAAHAAEAAAD0/wgAAAAIAAEAAAAFAAgAAAAGAAIAAAAGAAgAAAAHAAIAAAAHAAgAAAAHAAIAAAAIAAgAAAAHAAIAAAAJAAgAAAAHAAIAAAAFAAcAAAAGAAEAAAAGAAcAAAAHAAEAAAAHAAcAAAAHAAEAAAAIAAcAAAAHAAEAAAAJAAcAAAAHAAEAAAAFAAYAAAAGAAEAAAAGAAYAAAAJAAEAAAAHAAYAAAAHAAEAAAAIAAYAAAAHAAEAAAAJAAYAAAAHAAEAAAAFAAUAAAAGAAEAAAAGAAQAAAAHAAAAAAAHAAQAAAAHAAAAAAAIAAQAAAAHAAAAAAAJAAQAAAAHAAAAAAAGAAUAAAAHAAEAAAAHAAUAAAAHAAEAAAAIAAUAAAAHAAEAAAAJAAUAAAAHAAEAAAAKAAgAAAAHAAIAAAALAAgAAAAHAAIAAAAMAAgAAAAHAAIAAAANAAgAAAAIAAIAAAAKAAcAAAAHAAEAAAALAAcAAAAJAAEAAAAMAAcAAAAHAAEAAAANAAcAAAAIAAEAAAAKAAYAAAAHAAEAAAALAAYAAAAHAAEAAAAMAAYAAAAHAAEAAAANAAYAAAAIAAEAAAAKAAUAAAAHAAEAAAALAAUAAAAHAAEAAAAMAAUAAAAHAAEAAAANAAUAAAAIAAEAAAAKAAQAAAAHAAAAAAALAAQAAAAHAAAAAAAMAAQAAAAHAAAAAAANAAQAAAAIAAAAAAAEAAUAAAAIAAEAAAADAAYAAAAGAAEAAAADAAcAAAAGAAEAAAADAAgAAAAGAAEAAAADAAUAAAAGAAEAAAADAAQAAAAGAAEAAAAEAAQAAAAIAAEAAAADAAMAAAAGAAAAAAAEAAMAAAAIAAAAAAAFAAQAAAAGAAAAAAAAAAcAAAAHAAAAAAABAAcAAAAHAAAAAAACAAcAAAAIAAAAAAAAAAgAAAAHAAEAAAABAAgAAAAHAAEAAAACAAgAAAAIAAEAAAAJAAMAAAAGAAEAAAAKAAMAAAAIAAEAAAAJAAIAAAAGAAEAAAAKAAIAAAAIAAEAAAAJAAEAAAAGAAAAAAAKAAEAAAAIAAAAAAD0/wQAAAAGAAAAAAD0/wUAAAAGAAEAAAD0/wYAAAAGAAEAAAA=")
-tile_set = SubResource("TileSet_3kqmg")
-
-[node name="Apples" type="Node2D" parent="."]
-
-[node name="Apple" parent="Apples" instance=ExtResource("3_00k5o")]
-position = Vector2(-48, -16.7824)
-
-[node name="Apple2" parent="Apples" instance=ExtResource("3_00k5o")]
-position = Vector2(-32, -16.7824)
-
-[node name="Apple3" parent="Apples" instance=ExtResource("3_00k5o")]
-position = Vector2(0, -16.7824)
-
-[node name="Apple4" parent="Apples" instance=ExtResource("3_00k5o")]
-position = Vector2(-16, -16.7824)
-
-[node name="Apples2" type="Node2D" parent="."]
-position = Vector2(8, -16)
-
-[node name="Apple" parent="Apples2" instance=ExtResource("3_00k5o")]
-position = Vector2(-48, -16.7824)
-
-[node name="Apple2" parent="Apples2" instance=ExtResource("3_00k5o")]
-position = Vector2(-32, -16.7824)
-
-[node name="Apple4" parent="Apples2" instance=ExtResource("3_00k5o")]
-position = Vector2(-16, -16.7824)
-
-[node name="Apples3" type="Node2D" parent="."]
-position = Vector2(15.9999, -32.7824)
-
-[node name="Apple" parent="Apples3" instance=ExtResource("3_00k5o")]
-position = Vector2(-48, -16.7824)
-
-[node name="Apple2" parent="Apples3" instance=ExtResource("3_00k5o")]
-position = Vector2(-32, -16.7824)
-
-[node name="Apple" parent="." instance=ExtResource("3_00k5o")]
-position = Vector2(-24, -65.5647)
-
-[node name="Node2D" type="Node2D" parent="."]
-
-[node name="Cherry" parent="Node2D" instance=ExtResource("5_d4y73")]
-position = Vector2(160, 0)
-
-[node name="Cherry2" parent="Node2D" instance=ExtResource("5_d4y73")]
-position = Vector2(160, -16.7824)
-
-[node name="Cherry3" parent="Node2D" instance=ExtResource("5_d4y73")]
-position = Vector2(160, -35.4848)
-
-[node name="Cherry4" parent="Node2D" instance=ExtResource("5_d4y73")]
-position = Vector2(160, -56)
-
-[node name="Node2D2" type="Node2D" parent="."]
-
-[node name="Banana" parent="Node2D2" instance=ExtResource("4_n1l7y")]
-position = Vector2(-55.9531, 90.5468)
-
-[node name="Banana2" parent="Node2D2" instance=ExtResource("4_n1l7y")]
-position = Vector2(-33.92, 90.5468)
-
-[node name="Banana3" parent="Node2D2" instance=ExtResource("4_n1l7y")]
-position = Vector2(-9.91995, 90.5468)
-
-[node name="Banana4" parent="Node2D2" instance=ExtResource("4_n1l7y")]
-position = Vector2(14.08, 90.5468)
-
-[editable path="LevelManager"]
+[node name="LevelManager" parent="." instance=ExtResource("1_crh42")]
