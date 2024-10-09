@@ -1,10 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://cn7ci8kgchsqx"]
+[gd_scene load_steps=3 format=3 uid="uid://cn7ci8kgchsqx"]
 
 [ext_resource type="PackedScene" uid="uid://dgxefeopxlq2r" path="res://scenes/Levels/level_1.tscn" id="1_vxwi6"]
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_yhv2k"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_yhv2k")
 
 [node name="Level1" parent="." instance=ExtResource("1_vxwi6")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2.5, 2.5)
+
+[connection signal="tree_exited" from="Level1" to="." method="_on_level_1_tree_exited"]
+[connection signal="tree_exited" from="Level1" to="." method="_on_level_2_tree_exited"]

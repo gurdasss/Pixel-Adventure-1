@@ -20,3 +20,8 @@ const BG_TEXTURE: Array[String] = [
 func _ready() -> void:
 	player.position = playerStartingPosition
 	background.tile_set.get_source(1).texture = load(BG_TEXTURE.pick_random())
+
+
+
+func _on_checkpoint_body_entered(body: Node2D) -> void:
+	get_parent().queue_free()
