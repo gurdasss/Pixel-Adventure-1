@@ -11,5 +11,5 @@ script = ExtResource("1_yhv2k")
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2.5, 2.5)
 
-[connection signal="tree_exited" from="Level1" to="." method="_on_level_1_tree_exited"]
 [connection signal="tree_exited" from="Level1" to="." method="_on_level_2_tree_exited"]
+[connection signal="tree_exited" from="Level1" to="." method="_on_level_1_tree_exited"]

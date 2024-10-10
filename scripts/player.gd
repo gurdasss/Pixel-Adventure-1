@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+const SPEED: float = 100.0
+const JUMP_VELOCITY: float = -400.0
 var flag: bool = true
 
 var currentSkin: AnimatedSprite2D
@@ -25,7 +25,7 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 		
-		if Input.is_action_just_pressed("ui_accept") and flag:
+		if Input.is_action_just_pressed("jump") and flag:
 			currentSkin.play("double jump")
 			velocity.y = -250
 			flag = false
@@ -34,16 +34,23 @@ func _physics_process(delta: float) -> void:
 			currentSkin.play("idle")
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		flag = true
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("ui_left", "ui_right")
+	var direction := Input.get_axis("moveLeft", "moveRight")
+	
+	if direction > 0:
+		currentSkin.flip_h = false
+	elif direction < 0:
+		currentSkin.flip_h = true
+
 	if direction:
 		velocity.x = direction * SPEED
+		if is_on_floor():
+			currentSkin.play("run")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		currentSkin.play("idle")
 
 	move_and_slide()
