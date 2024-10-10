@@ -1,9 +1,37 @@
-[gd_scene load_steps=53 format=3 uid="uid://dd2v8rwy4uxgn"]
+[gd_scene load_steps=81 format=3 uid="uid://dd2v8rwy4uxgn"]
 
 [ext_resource type="Texture2D" uid="uid://ck6cnsawiirbc" path="res://assets/Main Characters/Mask Dude/Idle (32x32).png" id="1_5nwpu"]
+[ext_resource type="Texture2D" uid="uid://dusqct6cc7dfg" path="res://assets/Main Characters/Mask Dude/Double Jump (32x32).png" id="1_10uwj"]
 [ext_resource type="Texture2D" uid="uid://8td81qxas53g" path="res://assets/Main Characters/Ninja Frog/Idle (32x32).png" id="2_angym"]
+[ext_resource type="Texture2D" uid="uid://ifnbaqvhj1dy" path="res://assets/Main Characters/Ninja Frog/Double Jump (32x32).png" id="3_hdwaw"]
 [ext_resource type="Texture2D" uid="uid://b5mv3u5m0rrxa" path="res://assets/Main Characters/Pink Man/Idle (32x32).png" id="3_wbo4v"]
 [ext_resource type="Texture2D" uid="uid://b3pd7j60ajd8c" path="res://assets/Main Characters/Virtual Guy/Idle (32x32).png" id="4_gapbi"]
+[ext_resource type="Texture2D" uid="uid://dakmx6clyscnk" path="res://assets/Main Characters/Pink Man/Double Jump (32x32).png" id="5_xn8w8"]
+[ext_resource type="Texture2D" uid="uid://8ikrnfohoji0" path="res://assets/Main Characters/Virtual Guy/Double Jump (32x32).png" id="7_wtfow"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uvbbh"]
+atlas = ExtResource("1_10uwj")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smsga"]
+atlas = ExtResource("1_10uwj")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fr1h"]
+atlas = ExtResource("1_10uwj")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nur8n"]
+atlas = ExtResource("1_10uwj")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0kn0f"]
+atlas = ExtResource("1_10uwj")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xv5xd"]
+atlas = ExtResource("1_10uwj")
+region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qxbpx"]
 atlas = ExtResource("1_5nwpu")
@@ -53,6 +81,29 @@ region = Rect2(320, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_uvbbh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smsga")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6fr1h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nur8n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0kn0f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xv5xd")
+}],
+"loop": false,
+"name": &"double jump",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_qxbpx")
 }, {
 "duration": 1.0,
@@ -89,6 +140,30 @@ animations = [{
 "name": &"idle",
 "speed": 20.0
 }]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gj58"]
+atlas = ExtResource("3_hdwaw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dx1sn"]
+atlas = ExtResource("3_hdwaw")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oumpd"]
+atlas = ExtResource("3_hdwaw")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2bl8x"]
+atlas = ExtResource("3_hdwaw")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqfhq"]
+atlas = ExtResource("3_hdwaw")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pwt5m"]
+atlas = ExtResource("3_hdwaw")
+region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pvft0"]
 atlas = ExtResource("2_angym")
@@ -138,6 +213,29 @@ region = Rect2(320, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_5gj58")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dx1sn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oumpd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2bl8x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqfhq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pwt5m")
+}],
+"loop": false,
+"name": &"double jump",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_pvft0")
 }, {
 "duration": 1.0,
@@ -174,6 +272,30 @@ animations = [{
 "name": &"idle",
 "speed": 20.0
 }]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6u3kn"]
+atlas = ExtResource("5_xn8w8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_by2nq"]
+atlas = ExtResource("5_xn8w8")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ll6j4"]
+atlas = ExtResource("5_xn8w8")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fje5w"]
+atlas = ExtResource("5_xn8w8")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bokkp"]
+atlas = ExtResource("5_xn8w8")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nx1vx"]
+atlas = ExtResource("5_xn8w8")
+region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ucxfu"]
 atlas = ExtResource("3_wbo4v")
@@ -223,6 +345,29 @@ region = Rect2(320, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_6u3kn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_by2nq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ll6j4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fje5w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bokkp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nx1vx")
+}],
+"loop": false,
+"name": &"double jump",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_ucxfu")
 }, {
 "duration": 1.0,
@@ -259,6 +404,30 @@ animations = [{
 "name": &"idle",
 "speed": 20.0
 }]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xfdey"]
+atlas = ExtResource("7_wtfow")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fd8d7"]
+atlas = ExtResource("7_wtfow")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eo5it"]
+atlas = ExtResource("7_wtfow")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vlyrl"]
+atlas = ExtResource("7_wtfow")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6xxpd"]
+atlas = ExtResource("7_wtfow")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8e57"]
+atlas = ExtResource("7_wtfow")
+region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oelku"]
 atlas = ExtResource("4_gapbi")
@@ -308,6 +477,29 @@ region = Rect2(320, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_xfdey")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fd8d7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eo5it")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vlyrl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6xxpd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8e57")
+}],
+"loop": false,
+"name": &"double jump",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_oelku")
 }, {
 "duration": 1.0,
@@ -349,20 +541,20 @@ animations = [{
 
 [node name="Mask Dude" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_l4nhe")
-animation = &"idle"
+animation = &"double jump"
 autoplay = "idle"
 
 [node name="Ninja Frog" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_fwx0k")
-animation = &"idle"
+animation = &"double jump"
 autoplay = "idle"
 
 [node name="Pink Man" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_fwx55")
-animation = &"idle"
+animation = &"double jump"
 autoplay = "idle"
 
 [node name="Virtual Guy" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_cluc1")
-animation = &"idle"
+animation = &"double jump"
 autoplay = "idle"
