@@ -31,10 +31,15 @@ func _physics_process(delta: float) -> void:
 			flag = false
 		
 		if not currentSkin.is_playing():
-			currentSkin.play("idle")
+			currentSkin.play("fall")
+	
+	if is_on_wall():
+		currentSkin.play("wall jump")
+		velocity.y = SPEED
 
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
+		currentSkin.play("jump")
 		velocity.y = JUMP_VELOCITY
 		flag = true
 
@@ -51,6 +56,7 @@ func _physics_process(delta: float) -> void:
 			currentSkin.play("run")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		currentSkin.play("idle")
+		if is_on_floor():
+			currentSkin.play("idle")
 
 	move_and_slide()
