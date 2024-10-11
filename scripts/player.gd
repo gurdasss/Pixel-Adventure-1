@@ -25,6 +25,10 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 		
+		if is_on_wall():
+			currentSkin.play("wall jump")
+			velocity.y = SPEED
+		
 		if Input.is_action_just_pressed("jump") and flag:
 			currentSkin.play("double jump")
 			velocity.y = -250
@@ -32,10 +36,6 @@ func _physics_process(delta: float) -> void:
 		
 		if not currentSkin.is_playing():
 			currentSkin.play("fall")
-	
-	if is_on_wall():
-		currentSkin.play("wall jump")
-		velocity.y = SPEED
 
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():

@@ -7,9 +7,11 @@
 script = ExtResource("1_yhv2k")
 
 [node name="Level1" parent="." instance=ExtResource("1_vxwi6")]
+position = Vector2(235, 131)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2.5, 2.5)
+anchor_mode = 0
+zoom = Vector2(2.485, 2.4)
 
-[connection signal="tree_exited" from="Level1" to="." method="_on_level_1_tree_exited"]
 [connection signal="tree_exited" from="Level1" to="." method="_on_level_2_tree_exited"]
+[connection signal="tree_exited" from="Level1" to="." method="_on_level_1_tree_exited"]

@@ -4,6 +4,8 @@ extends Node2D
 func _on_level_1_tree_exited() -> void:
 	var level2 = preload("res://scenes/Levels/level_2.tscn").instantiate()
 	
+	level2.position = Vector2(235, 131)
+	
 	add_child(level2)
 
 
