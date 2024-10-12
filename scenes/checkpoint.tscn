@@ -1,8 +1,6 @@
-[gd_scene load_steps=43 format=3 uid="uid://c6q41q5dkn4hw"]
+[gd_scene load_steps=41 format=3 uid="uid://c6q41q5dkn4hw"]
 
 [ext_resource type="Texture2D" uid="uid://dmcy8j1mlackw" path="res://assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png" id="1_adech"]
-[ext_resource type="Texture2D" uid="uid://uiowj4sekqql" path="res://assets/Items/Checkpoints/Checkpoint/Checkpoint (No Flag).png" id="1_ugno2"]
-[ext_resource type="Script" path="res://scripts/checkpoint.gd" id="1_xrd2q"]
 [ext_resource type="Texture2D" uid="uid://blagrwt5ebsre" path="res://assets/Items/Checkpoints/Checkpoint/Checkpoint (Flag Out) (64x64).png" id="2_nfkbt"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_esvg0"]
@@ -268,14 +266,6 @@ animations = [{
 "loop": false,
 "name": &"flag out",
 "speed": 20.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_ugno2")
-}],
-"loop": false,
-"name": &"idle",
-"speed": 0.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_icp0p"]
@@ -283,12 +273,11 @@ size = Vector2(24, 48)
 
 [node name="Checkpoint" type="Area2D"]
 collision_mask = 2
-script = ExtResource("1_xrd2q")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lkkrg")
-animation = &"idle"
-autoplay = "idle"
+animation = &"flag idle"
+autoplay = "flag idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-4, 8)

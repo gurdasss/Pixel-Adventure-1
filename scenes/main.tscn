@@ -13,5 +13,5 @@ position = Vector2(235, 131)
 anchor_mode = 0
 zoom = Vector2(2.485, 2.4)
 
-[connection signal="tree_exited" from="Level1" to="." method="_on_level_2_tree_exited"]
 [connection signal="tree_exited" from="Level1" to="." method="_on_level_1_tree_exited"]
+[connection signal="tree_exited" from="Level1" to="." method="_on_level_2_tree_exited"]

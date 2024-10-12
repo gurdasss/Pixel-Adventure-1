@@ -7,6 +7,9 @@ var flag: bool = true
 
 var currentSkin: AnimatedSprite2D
 
+@onready var running_dust: CPUParticles2D = $"Running Dust"
+@onready var jump_dust: CPUParticles2D = $"Jump Dust"
+
 func _ready() -> void:
 	# instantiate the skin Manager that contains
 	# all the skins for the player
@@ -31,6 +34,7 @@ func _physics_process(delta: float) -> void:
 		
 		if Input.is_action_just_pressed("jump") and flag:
 			currentSkin.play("double jump")
+			jump_dust.emitting = true
 			velocity.y = -250
 			flag = false
 		
@@ -40,6 +44,7 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		currentSkin.play("jump")
+		jump_dust.emitting = true
 		velocity.y = JUMP_VELOCITY
 		flag = true
 
@@ -47,13 +52,17 @@ func _physics_process(delta: float) -> void:
 	
 	if direction > 0:
 		currentSkin.flip_h = false
+		running_dust.direction.x = -1
 	elif direction < 0:
 		currentSkin.flip_h = true
+		running_dust.direction.x = 1 
+		
 
 	if direction:
 		velocity.x = direction * SPEED
 		if is_on_floor():
 			currentSkin.play("run")
+			running_dust.emitting = true
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		if is_on_floor():

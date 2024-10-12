@@ -40,7 +40,7 @@ func _on_body_entered(body: Node2D) -> void:
 		animatedSprite.play("hit")
 		numberOfHits -= 1
 	
-	# numberOfHits is zero or negative
+	# numberOfHits is zero
 	if is_instance_valid(animatedSprite) and not numberOfHits:
 		animatedSprite.queue_free()
 		cpu_particles.emitting = true # start emitting particles
