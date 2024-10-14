@@ -12,6 +12,31 @@ var animatedSprite: AnimatedSprite2D = null
 
 var fruitBasket: Array[PackedScene]
 
+func generateRigidBody() -> RigidBody2D:
+	var collisionShape: CircleShape2D = CircleShape2D.new()
+	collisionShape.radius = 1
+	
+	var circleCollision: CollisionShape2D = CollisionShape2D.new()
+	circleCollision.shape = collisionShape
+	
+	var rigidBody: RigidBody2D = RigidBody2D.new()
+	rigidBody.add_child(circleCollision)
+	
+	return rigidBody
+
+func generateFruit() -> Node2D:
+	var rigidBody: RigidBody2D = generateRigidBody()
+	var randomFruit: Node2D = fruitBasket.pick_random().instantiate()
+	
+	randomFruit.add_child(rigidBody)
+	
+	return randomFruit
+	
+
+func dropFruits(amount: int) -> void:
+	for i in range(amount):
+		get_parent().add_child(generateFruit())
+
 func _ready() -> void:
 	# get the last node from each instance of this node.
 	# AnimatedSprite2D (last child)
@@ -44,6 +69,8 @@ func _on_body_entered(body: Node2D) -> void:
 	if is_instance_valid(animatedSprite) and not numberOfHits:
 		animatedSprite.queue_free()
 		cpu_particles.emitting = true # start emitting particles
+		
+		dropFruits(5)
 
 func _on_body_exited(body: Node2D) -> void:
 	if is_instance_valid(animatedSprite):
