@@ -24,23 +24,25 @@ func generateRigidBody() -> RigidBody2D:
 	
 	return rigidBody
 
-func generateFruit() -> Node2D:
+func generateFruit() -> RigidBody2D:
 	var rigidBody: RigidBody2D = generateRigidBody()
 	var randomFruit: Node2D = fruitBasket.pick_random().instantiate()
 	
-	randomFruit.add_child(rigidBody)
+	rigidBody.add_child(randomFruit)
 	
-	return randomFruit
+	return rigidBody
 	
 
 func dropFruits(amount: int) -> void:
 	for i in range(amount):
-		get_parent().add_child(generateFruit())
+		var test = generateFruit()
+		get_parent().add_child(test)
 
 func _ready() -> void:
 	# get the last node from each instance of this node.
 	# AnimatedSprite2D (last child)
 	animatedSprite = get_child(-1)
+	
 	
 	fruitBasket.append(preload("res://scenes/Fruits/apple.tscn"))
 	fruitBasket.append(preload("res://scenes/Fruits/banana.tscn"))
